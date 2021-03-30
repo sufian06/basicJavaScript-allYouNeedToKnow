@@ -1,0 +1,20 @@
+1. Programmimg Basics
+2. Logic and Conditions
+3. Loops and Repetaiton
+4. Handling Strings
+5. Arrays
+6. Objects
+7. Function
+8. Fucntional Programmimg
+9. Scope and Closure
+10. OOP Intro
+11. OOP with JS
+12. Prototype
+13. Prototyical Inheritance
+14. ES6
+15. Error Handling
+16. Asynchronous Programmimg
+17. DOM
+18. Project
+19. JavaScript Libraries
+20. Future Road Map
