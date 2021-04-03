@@ -16,3 +16,15 @@ while(isRunning) {
         console.log('You have got ' + rand);
     }
 }
+
+var abuSufian = true;
+
+while (abuSufian) {
+    var sufian = Math.floor(Math.random() * 10 + 1);
+    if (sufian === 6) {
+        console.log('Congrats! You Win!!');
+        abuSufian = false;
+    } else {
+        console.log('Your Number is: ' + sufian);
+    }
+}
