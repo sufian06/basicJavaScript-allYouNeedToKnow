@@ -8,4 +8,4 @@ while (isRunning) {
 
 do {
     console.log('He is Running');
-} while (isRunning)
+} while (isRunning);
