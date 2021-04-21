@@ -2,7 +2,7 @@
 
 var arr = [4, 7, 2, 6, 8, 4, 55, 9, 89, 27]
 
-var find = 555
+var find = 55
 var isFound = false
 
 for (var i = 0; i < arr.length; i++) {
