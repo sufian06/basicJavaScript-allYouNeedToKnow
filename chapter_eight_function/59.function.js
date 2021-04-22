@@ -11,8 +11,9 @@
 // console.log(date);
 
 function functionName() {
-
+    console.log('I am a function');
 }
+functionName()
 
 function add() {
     var a = 10;
