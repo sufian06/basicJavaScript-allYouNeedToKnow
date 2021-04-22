@@ -27,6 +27,10 @@ function sub() {
 // }
 
 add()
+add()
+add()
+add()
+add()
 sub()
 
 console.log(add);
