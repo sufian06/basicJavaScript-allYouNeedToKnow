@@ -98,19 +98,54 @@
  * Higher Order Function
  */
 
-function add (a, b) {
-    return a + b
-}
+// function add (a, b) {
+//     return a + b
+// }
 // console.log(add(44, 10));
 
-function manipulate(a, b, func) {
-    var c = a + b
-    var d = a - b
+// function manipulate(a, b, func) {
+//     var c = a + b
+//     var d = a - b
 
-    return function() {
-        var m = func(a, b)
-        return c*d*m
+//     return function() {
+//         var m = func(a, b)
+//         return c*d*m
+//     }
+// }
+// var multiply = manipulate(3, 4, add)
+// console.log(multiply());
+
+
+/**
+ * Map Function
+ */
+
+var arr = [1, 2, 3, 4, 5]
+
+function myMap(arr, cb) {
+    var newArr = []
+    for(var i = 0; i < arr.length; i++) {
+        var temp = cb(arr[i])
+        newArr.push(temp)
     }
+    return newArr
+    
 }
-var multiply = manipulate(3, 4, add)
-console.log(multiply());
+
+var sqr = myMap(arr, function(value) {
+    return value*value
+})
+
+var qb = myMap(arr, function(value) {
+    return value * value * value
+})
+
+var mten = myMap(arr, function(value) {
+    return value * 10
+})
+
+
+console.log(arr);
+console.log(sqr);
+console.log(qb);
+console.log(mten);
