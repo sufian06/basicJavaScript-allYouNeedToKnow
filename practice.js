@@ -81,7 +81,7 @@
  * Reverse of Array Data
  */
 
-var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // for (var i = 0; i < (arr.length / 2); i++) {
 //     var temp = arr[i]
@@ -91,4 +91,26 @@ var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // console.log(arr);
 
-console.log(arr.reverse());
+// console.log(arr.reverse());
+
+
+/**
+ * Higher Order Function
+ */
+
+function add (a, b) {
+    return a + b
+}
+// console.log(add(44, 10));
+
+function manipulate(a, b, func) {
+    var c = a + b
+    var d = a - b
+
+    return function() {
+        var m = func(a, b)
+        return c*d*m
+    }
+}
+var multiply = manipulate(3, 4, add)
+console.log(multiply());
